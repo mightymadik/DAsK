@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TaskTypeCollectionViewCell" customModule="FinalProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ej0-yv-Sxi">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lt3-LE-ELX">
+                                <rect key="frame" x="21" y="0.0" width="78" height="78"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamecontroller" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bpj-HH-SWt">
+                                        <rect key="frame" x="12" y="21.5" width="54" height="35"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="large" weight="medium"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bpj-HH-SWt" firstAttribute="centerY" secondItem="Lt3-LE-ELX" secondAttribute="centerY" id="93v-1v-ufF"/>
+                                    <constraint firstItem="bpj-HH-SWt" firstAttribute="centerX" secondItem="Lt3-LE-ELX" secondAttribute="centerX" id="lOf-sZ-y7s"/>
+                                    <constraint firstAttribute="width" secondItem="Lt3-LE-ELX" secondAttribute="height" multiplier="1:1" id="x5K-3c-0LR"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gaming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIb-7I-Ieb">
+                                <rect key="frame" x="31" y="102" width="58" height="18"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jIb-7I-Ieb" secondAttribute="bottom" id="7I2-JD-p6R"/>
+                            <constraint firstItem="jIb-7I-Ieb" firstAttribute="centerX" secondItem="ej0-yv-Sxi" secondAttribute="centerX" id="Kbd-L9-wHB"/>
+                            <constraint firstItem="Lt3-LE-ELX" firstAttribute="centerX" secondItem="ej0-yv-Sxi" secondAttribute="centerX" id="SeQ-Vc-hc3"/>
+                            <constraint firstItem="Lt3-LE-ELX" firstAttribute="top" secondItem="ej0-yv-Sxi" secondAttribute="top" id="iyL-7Y-DcA"/>
+                            <constraint firstItem="Lt3-LE-ELX" firstAttribute="height" secondItem="ej0-yv-Sxi" secondAttribute="height" multiplier="0.65" id="mnb-QZ-kcj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ej0-yv-Sxi" secondAttribute="trailing" id="Iho-YU-2y2"/>
+                <constraint firstItem="ej0-yv-Sxi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XG7-Tp-1Lh"/>
+                <constraint firstItem="ej0-yv-Sxi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="czO-qK-Pld"/>
+                <constraint firstAttribute="bottom" secondItem="ej0-yv-Sxi" secondAttribute="bottom" id="yup-Pg-wq0"/>
+            </constraints>
+            <connections>
+                <outlet property="imageContainerView" destination="Lt3-LE-ELX" id="kVh-Z2-Ynk"/>
+                <outlet property="imageVIew" destination="bpj-HH-SWt" id="p43-JF-Tb4"/>
+                <outlet property="typeName" destination="jIb-7I-Ieb" id="Wx1-r8-tiG"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+    </resources>
+</document>
